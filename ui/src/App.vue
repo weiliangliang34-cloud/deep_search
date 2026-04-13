@@ -120,7 +120,7 @@ const handleSocketMessage = (data: any) => {
     if (lastAiMsg) {
       if (!lastAiMsg.logs) lastAiMsg.logs = []
       lastAiMsg.logs.push({
-        type: 'tool',
+        type: 'tools',
         title: `使用的工具： ${eventData.tool_name}...`,
         details: eventData.args,
         timestamp: new Date().toLocaleTimeString()
